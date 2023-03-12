@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top-fixed-navbar {
+    height: 50px;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* to make the navbar stick to top */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+}
+
+#hamberger {
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#youtube-logo {
+    height: 20px;
+    margin-left: 10px;
+}
+
+.center-top-fixed-navbar {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+#check {
+    display: none;
+}
+
+#search-box {
+    height: 36px;
+    width: 100%;
+    border-radius: 18px;
+    padding-left: 15px;
+    outline: 1px;
+    border: 1px solid grey;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: all 0.3s ease;
+}
+
+#search {
+    height: 20px;
+    width: 34px;
+    margin-left: -10px;
+    margin-right: 10px;
+    padding: 8px;
+    background-color: #f2f2f2;
+    /*light grey youtube background */
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    border: 1px solid grey;
+}
+
+#microphone,
+#create,
+#notifications {
+    height: 22px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+#user-dp {
+    height: 25px;
+    margin-left: 8px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.right-top-fixed-navbar {
+    right: 0;
+}
+
+.sidebar {
+    display: inline-block;
+    position: absolute;
+}
+
+.vertical-scrollable-sidebar {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 65px;
+    margin-left: 15px;
+    display: flex;
+    width: 190px;
+    height: fit-content;
+    flex-direction: column;
+}
+
+hr {
+    margin: 10px 0;
+    height: 0.5px;
+    border: none;
+    background-color: rgb(215, 214, 214);
+}
+
+.home,
+.shorts,
+.subscriptions,
+.library,
+.history,
+.your-videos,
+.watch-later,
+.your-clips,
+.show-more,
+.trending,
+.shopping,
+.music,
+.movies,
+.gaming,
+.news,
+.sports,
+.learning,
+.settings,
+.report,
+.help,
+.feedback {
+    display: flex;
+    width: 180px;
+    height: 40px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.home,
+.library:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.shorts:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.subscriptions:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.history:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.your-videos:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.show-more:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.watch-later:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.your-clips:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.trending:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.shopping:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.music:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.movies:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.gaming:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.news:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.sports:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.learning:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.settings:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.report:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.help:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.feedback:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+
+span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#home,
+#shorts,
+#subscriptions,
+#library,
+#history,
+#your-videos,
+#watch-later,
+#your-clips,
+#trending,
+#shopping,
+#music,
+#movies,
+#gaming,
+#news,
+#sports,
+#learning,
+#settings,
+#report,
+#help,
+#feedback {
+    height: 22px;
+    margin: 5px 15px;
+}
+
+#show-more {
+    height: 12px;
+    margin: 5px 20px;
+}
+
+.small-grey-text {
+    display: inline-block;
+    color: rgb(76, 76, 76);
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 2px;
+}
+
+.main {
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 200px;
+}
+
+.video-content {
+    display: inline-block;
+    width: 270px;
+    height: 250px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.video-content img {
+    width: 270px;
+    border-radius: 10px;
+}
+
+.logo-rect {
+    width: 40px;
+    height: 70px;
+    display: inline-block;
+    /* background-color: blue; */
+}
+
+.video-lower-right-p {
+    display: inline-block;
+    width: 210px;
+    height: 30px;
+    padding-left: 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.video-lower-part {
+    display: flex;
+    height: 60px;
+}
+
+.logo-rect img {
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.video-lower-part p {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: small;
+}
+
+.video-stats {
+    display: inline-block;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: grey;
+
+
+}
+
+.channel-name {
+    display: inline-block;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
+}
+
+@media only screen and (max-width: 602px) {
+
+    /* For mobile phones: */
+    .center-top-fixed-navbar {
+        width: 20px;
+    }
+
+    #search-box {
+        padding: 0;
+        border: 0;
+    }
+
+    #search {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        padding: 4px;
+        margin-left: 8px;
+    }
+
+
+}

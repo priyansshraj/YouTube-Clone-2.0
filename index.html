@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/youtube-logo-with-no-text.svg">
+    <title>YouTube Clone 2.0</title>
+</head>
+
+<body>
+    <nav class="top-fixed-navbar">
+        <div>
+            <img src="images/hamberger.jpg" alt="hamberger" id="hamberger">
+            <img src="images/youtube-logo.svg" alt="youtube-logo" id="youtube-logo">
+        </div>
+        <div class="center-top-fixed-navbar">
+            <input type="text" id="search-box" placeholder="Search">
+            <img src="images/search.svg" alt="search" id="search">
+            <img src="images/microphone.svg" alt="microphone" id="microphone">
+        </div>
+        <div class="right-top-fixed-navbar">
+            <img src="images/create.svg" alt="create" id="create">
+            <img src="images/notifications.svg" alt="notifications" id="notifications">
+            <img src="images/user-dp.jpg" alt="user-dp" id="user-dp">
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="vertical-scrollable-sidebar">
+            <div class="home">
+                <img src="images/home.svg" alt="" id="home">
+                <span>Home</span>
+            </div>
+            <div class="shorts">
+                <img src="images/shorts.svg" alt="" id="shorts">
+                <span>Shorts</span>
+            </div>
+            <div class="subscriptions">
+                <img src="images/subscriptions.svg" alt="subscriptions" id="subscriptions">
+                <span>Subscriptions</span>
+            </div>
+            <hr>
+            <div class="library">
+                <img src="images/library.svg" alt="library" id="library">
+                <span>Library</span>
+            </div>
+            <div class="history">
+                <img src="images/history.svg" alt="history" id="history">
+                <span>History</span>
+            </div>
+            <div class="your-videos">
+                <img src="images/your-videos.svg" alt="your-videos" id="your-videos">
+                <span>Your videos </span>
+            </div>
+            <div class="watch-later">
+                <img src="images/watch-later.svg" alt="watch-later" id="watch-later">
+                <span>Watch later</span>
+            </div>
+            <div class="your-clips">
+                <img src="images/clips.svg" alt="your-clips" id="your-clips">
+                <span>Your clips</span>
+            </div>
+            <div class="show-more">
+                <img src="images/show-more.svg" alt="show-more" id="show-more">
+                <span>Show more</span>
+            </div>
+            <hr>
+            <div class="trending">
+                <img src="images/trending.svg" alt="trending" id="trending">
+                <span>Trending</span>
+            </div>
+            <div class="shopping">
+                <img src="images/shopping.svg" alt="shopping" id="shopping">
+                <span>Shopping</span>
+            </div>
+            <div class="music">
+                <img src="images/music.svg" alt="music" id="music">
+                <span>Music</span>
+            </div>
+            <div class="movies">
+                <img src="images/movies.svg" alt="movies" id="movies">
+                <span>Movies</span>
+            </div>
+            <div class="gaming">
+                <img src="images/gaming.svg" alt="gaming" id="gaming">
+                <span>Gaming</span>
+            </div>
+            <div class="news">
+                <img src="images/news.svg" alt="news" id="news">
+                <span>News</span>
+            </div>
+            <div class="sports">
+                <img src="images/sports.svg" alt="sports" id="sports">
+                <span>Sports</span>
+            </div>
+            <div class="learning">
+                <img src="images/learning.svg" alt="learning" id="learning">
+                <span>Learning</span>
+            </div>
+            <hr>
+            <div class="settings">
+                <img src="images/settings.svg" alt="settings" id="settings">
+                <span>Settings</span>
+            </div>
+            <div class="report">
+                <img src="images/flag.svg" alt="report" id="report">
+                <span>Report history</span>
+            </div>
+            <div class="help">
+                <img src="images/help.svg" alt="help" id="help">
+                <span>Help</span>
+            </div>
+            <div class="feedback">
+                <img src="images/feedback.svg" alt="feedback" id="feedback">
+                <span>Feedback</span>
+            </div>
+
+            <hr>
+
+            <div class="bottom-left-corner">
+                <div class="small-grey-text">About</div>
+                <div class="small-grey-text">Press</div>
+                <div class="small-grey-text">Copyright</div>
+                <div class="small-grey-text">Contact us</div>
+                <div class="small-grey-text">Creaters</div>
+                <div class="small-grey-text">Advertise</div>
+                <div class="small-grey-text">Developers</div>
+                <br>
+                <br>
+                <div class="small-grey-text">Terms</div>
+                <div class="small-grey-text">Privacy </div>
+                <div class="small-grey-text">Policy & Safety</div>
+                <div class="small-grey-text">How YouTube works</div>
+                <div class="small-grey-text">Test new features</div>
+                <br>
+                <br>
+                <div class="small-grey-text">© 2023 Google LLC</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/anti-gravity-wheel.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/veritasium.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        Anti-gravity wheel?
+                    </p>
+                </div>
+                <div class="channel-name">
+                    Veritasium <img src="images/verified.svg" alt="verified" style="height: 10px; width: 10px;">
+                </div>
+                <div class="video-stats">
+                    33M views • 8 years ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/war against india.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/thinkschool-logo.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        Why does George Soros want to bring MODI down? How does this...
+                    </p>
+                </div>
+                <div class="channel-name">
+                    Think School
+                    <!-- <img src="images/verified.svg" alt="verified" style="height: 10px; width: 10px;"> -->
+                </div>
+                <div class="video-stats">
+                    1.1M views • 9 days ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/freecodecamp-frontend.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/freecodecamplogo.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        Frontend Web Development Bootcamp Course
+                    </p>
+                </div>
+                <div class="channel-name">
+                    FreeCodeCamp <img src="images/verified.svg" alt="verified" style="height: 10px; width: 10px;">
+                </div>
+                <div class="video-stats">
+                    1.1M views • 6 months ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/tharun-placements-documentary.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/tharun.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        My IIT Placements Documentary - 2023
+                    </p>
+                </div>
+                <div class="channel-name">
+                    Tharun Speaks <img src="images/verified.svg" alt="verified" style="height: 10px; width: 10px;">
+                </div>
+                <div class="video-stats">
+                    10K views • 11 minutes ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/india-is -killing.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/thinkschool-logo.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        How India is TRAPPING China with its Military STRATEGY?
+                    </p>
+                </div>
+                <div class="channel-name">
+                    Think School
+                </div>
+                <div class="video-stats">
+                    12M views • 9 months ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/files-look-like.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/channels4_profile.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        How Binary Works, and the Power of Abstraction
+                    </p>
+                </div>
+                <div class="channel-name">
+                    Josh's Channel
+                </div>
+                <div class="video-stats">
+                    117K views • 11 days ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/javascript-number.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/codeman-yt.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        JavaScripts Numbers Fundamentals [Hindi]
+                    </p>
+                </div>
+                <div class="channel-name">
+                    CodeMan
+                </div>
+                <div class="video-stats">
+                    5.5K views • 8 days ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/thumbnail6.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/dp6.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        Linux Tutorial For Beginners - 2 | Standard Streams and File Manipulation
+                    </p>
+                </div>
+                <div class="channel-name">
+                    Apoorv Goyal <img src="images/verified.svg" alt="verified" style="height: 10px; width: 10px;">
+                </div>
+                <div class="video-stats">
+                    98K views • 7 months ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/thumbnail1.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/dp1.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        Don't make these mistakes while preparing for placements
+                    </p>
+                </div>
+                <div class="channel-name">
+                    Fraz
+                </div>
+                <div class="video-stats">
+                    35K views • 8 months ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/thumbnail4.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/dp4.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        777 Charlie Trailer - Hindi | Rakshit Shetty | Kiranraj K | Nobin Paul...
+                    </p>
+                </div>
+                <div class="channel-name">
+                    Paramvah Studios <img src="images/verified.svg" alt="verified" style="height: 10px; width: 10px;">
+                </div>
+                <div class="video-stats">
+                    85M views • 1 year ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/thumbnail5.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/dp5.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        How do SSDs Work? | How does your Smartphone store data?
+                    </p>
+                </div>
+                <div class="channel-name">
+                    Veritasium <img src="images/verified.svg" alt="verified" style="height: 10px; width: 10px;">
+                </div>
+                <div class="video-stats">
+                    8.3M views • 3 years ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/thumbnail2.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/dp2.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        How to become 33.78% better at anything | Atomic Habits
+                    </p>
+                </div>
+                <div class="channel-name">
+                    Escaping Ordinary (B.C. Marx)
+                </div>
+                <div class="video-stats">
+                    42M views • 1 year ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/thumbnail3.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/dp3.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        Arduino Course for Beginners - Open-Source Electronics Platform
+                    </p>
+                </div>
+                <div class="channel-name">
+                    FreeCodeCamp <img src="images/verified.svg" alt="verified" style="height: 10px; width: 10px;">
+                </div>
+                <div class="video-stats">
+                    13.3M views • 3 years ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/codeforces rating.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/utkarsh-gupta.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        Two simple tips to boost your Codeforces/Codechef ratings
+                    </p>
+                </div>
+                <div class="channel-name">
+                    Utkarsh Gupta
+                </div>
+                <div class="video-stats">
+                    102K views • 2 years ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/dating-in-20s.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/trs.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        Dating In Your 20s - MOST IMPORTANT Advice from a Psych...
+                    </p>
+                </div>
+                <div class="channel-name">
+                    TRS Clips <img src="images/verified.svg" alt="verified" style="height: 10px; width: 10px;">
+                </div>
+                <div class="video-stats">
+                    114K views • 3 weeks ago
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video-upper-part">
+                <img src="images/thumbnails/sharktank1.webp" alt="">
+            </div>
+
+            <div class="video-lower-part">
+                <div class="logo-rect">
+                    <img src="images/logo/sharktankglobal.jpg" alt="logo">
+                </div>
+                <div class="video-lower-right-p">
+                    <p>
+                        Mark Cuban Accuses Simple Habit Owner Of Being A Gold Digger
+                    </p>
+                </div>
+                <div class="channel-name">
+                    Shark Tank Global <img src="images/verified.svg" alt="verified" style="height: 10px; width: 10px;">
+                </div>
+                <div class="video-stats">
+                    3.2M views • 8 months ago
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
