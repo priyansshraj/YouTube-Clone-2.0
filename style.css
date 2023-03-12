@@ -362,6 +362,15 @@ span {
         width: 20px;
     }
 
+    .vertical-scrollable-sidebar{
+        display: none !important;
+    }
+    
+    .main{
+        margin-left: 0;
+    }
+
+
     #search-box {
         padding: 0;
         border: 0;
