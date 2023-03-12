@@ -270,12 +270,13 @@ span {
     margin: 5px 20px;
 }
 
-.small-grey-text {
+.left-bottom-grey-text {
     display: inline-block;
     color: rgb(76, 76, 76);
     font-size: 13px;
     font-weight: 500;
     margin: 0 2px;
+    cursor: pointer;
 }
 
 .main {
@@ -362,6 +363,19 @@ span {
         width: 20px;
     }
 
+    #hamberger {
+        height: 0px;
+        width: 0px;
+    }
+
+    #youtube-logo {
+        margin-left: -20px;
+    }
+
+    #microphone{
+        width: 0px;
+    }
+
     .vertical-scrollable-sidebar{
         display: none !important;
     }
@@ -370,6 +384,9 @@ span {
         margin-left: 0;
     }
 
+    .video-content{
+        padding-left: 10%;
+    }
 
     #search-box {
         padding: 0;
